@@ -27,7 +27,7 @@
     config.backgroundColor = [UIColor lightGrayColor];
     config.textFont = [UIFont fontWithName:@"Times New Roman" size:15];
     NSArray *array = @[@"Adele",@"Alicia Keys",@"Ariana Grande",@"Avril Lavigne",@"Beyoncé",@"Britney Spears",@"Celine Dion",@"Katy Perry",@"Rihanna"];
-    self.flow = [[MSSAutoresizeLabelFlow alloc]initWithFrame:CGRectMake(10, 100, [UIScreen mainScreen].bounds.size.width-20, 1) titles:array selectedHandler:^(NSUInteger index, NSString *title) {
+    self.flow = [[MSSAutoresizeLabelFlow alloc]initWithFrame:CGRectMake(10, 100, [UIScreen mainScreen].bounds.size.width-20, 0) titles:array selectedHandler:^(NSUInteger index, NSString *title) {
         NSLog(@"%lu %@",index,title);
     }];
     [self.view addSubview:self.flow];

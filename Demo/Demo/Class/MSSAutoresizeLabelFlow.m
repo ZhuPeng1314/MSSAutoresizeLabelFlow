@@ -23,11 +23,13 @@ static NSString *const cellId = @"cellId";
 @implementation MSSAutoresizeLabelFlow
 
 - (instancetype)initWithFrame:(CGRect)frame titles:(NSArray *)titles selectedHandler:(selectedHandler)handler {
-    self = [super initWithFrame:frame];
+    CGRect newFrame = CGRectMake(frame.origin.x, frame.origin.y, frame.size.width, 1);
+    self = [super initWithFrame:newFrame];
     if (!titles.count) {
         return self;
     }
     if (self) {
+        
         self.backgroundColor = [UIColor clearColor];
         self.data = [titles mutableCopy];
         self.handler = handler;

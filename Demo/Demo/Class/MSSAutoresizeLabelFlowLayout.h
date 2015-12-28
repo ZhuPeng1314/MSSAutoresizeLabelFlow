@@ -10,8 +10,6 @@
 
 @protocol MSSAutoresizeLabelFlowLayoutDelegate <NSObject>
 
-@optional
-
 - (void)layoutFinishWithNumberOfline:(NSInteger)number;
 
 @end
