@@ -1,4 +1,5 @@
 # MSSAutoresizeLabelFlow 
+![](https://raw.githubusercontent.com/immrss/MSSAutoresizeLabelFlow/master/DemoGif.gif)
 
 ## Usage
 * **Initilize** （Initilize the view using `MSSAutoresizeLabelFlowConfig` or default configuration.The block will be call back when you select the label.）
