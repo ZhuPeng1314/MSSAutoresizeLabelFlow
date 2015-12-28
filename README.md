@@ -9,19 +9,19 @@ config.backgroundColor = [UIColor lightGrayColor];
 config.textFont = [UIFont fontWithName:@"Times New Roman" size:15];
 NSArray *array = @[@"Jose Mourinho",@"Robben",@"Robin Van Persie",@"Sneijder",@"Didier Drogba",@"Frank Lampard",@"Terry"];
 self.flow = [[MSSAutoresizeLabelFlow alloc]initWithFrame:CGRectMake(10, 100, [UIScreen mainScreen].bounds.size.width-20, 0) titles:array selectedHandler:^(NSUInteger index, NSString *title) {
-NSLog(@"%lu %@",index,title);
+    NSLog(@"%lu %@",index,title);
 }];
 [self.view addSubview:self.flow]; 
 ```
 * **Insert**
 ```objective-c
-[self.flow insertLabelWithTitle:@"Eto'o" atIndex:1 animated:YES];
+[self.flow insertLabelWithTitle:@"Mourinho" atIndex:1 animated:YES];
 ```
 ```objective-c
 NSMutableIndexSet *set = [NSMutableIndexSet indexSet];
 [set addIndex:1];
 [set addIndex:3];
-[self.flow insertLabelsWithTitles:@[@"Eto'o",@"Zanetti"] atIndexes:set animated:YES];
+[self.flow insertLabelsWithTitles:@[@"Mourinho",@"Jose Mourinho"] atIndexes:set animated:YES];
 ```
 * **Delete**
 ```objective-c
@@ -35,7 +35,7 @@ NSMutableIndexSet *set = [NSMutableIndexSet indexSet];
 ```
 * **Reload**
 ```objective-c
-NSArray *array = @[@"David Beckham",@"Rooney",@"Ryan Giggs",@"Paul Scholes",@"Angel Di Maria",@"de Gea"];
+NSArray *array = @[@"Petr Cech",@"Branislav Ivanovic",@"Carvalho",@"John Terry",@"Ashly Cole",@"Michael Essien",@"Frank Lampard",@"Michael Ballack",@"Joe Cole",@"Florent Malouda",@"Didier Drogba"];
 [self.flow reloadAllWithTitles:array];
 ```
 ## License
