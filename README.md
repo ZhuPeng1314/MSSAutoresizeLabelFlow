@@ -1,4 +1,5 @@
 # MSSAutoresizeLabelFlow 
+ ![](/path/to/img.jpg)
 
 ## Usage
 * **Initilize** （Initilize the view using `MSSAutoresizeLabelFlowConfig` or default configuration.The block will be call back when you select the label.）
