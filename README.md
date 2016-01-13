@@ -1,4 +1,4 @@
-# SSAutoresizeLabelFlow 
+# MSSAutoresizeLabelFlow 
 ![](https://raw.githubusercontent.com/immrss/MSSAutoresizeLabelFlow/master/DemoGif.gif)
 
 ## Usage
